@@ -12,6 +12,8 @@ body {
   border: 0.3rem solid red;
   padding: 0.5rem;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .container-row {
@@ -28,7 +30,7 @@ body {
 }
 
 .prev, .next {
-  position: absolute;
+  position: relative;
   font-size: 30px;
   margin: auto;
   cursor: pointer;

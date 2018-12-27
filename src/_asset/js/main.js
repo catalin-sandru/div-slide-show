@@ -1,22 +1,28 @@
 let current = document.querySelectorAll('.current');
 const content = document.querySelectorAll('.container');
-let contentArr = Array.from(content);
-// console.log(content);
+const contentArr = Array.from(content);
 console.log(contentArr);
 
-current = [];
 console.log(current);
 let prev = document.querySelector('.prev');
 prev.addEventListener('mousedown', prevSlide);
 let next = document.querySelector('.next');
 next.addEventListener('click', nextSlide);
+current = contentArr.length[0];
 
-
-
-function prevSlide(){
-  alert('muie psd');
+function initSlider() {
+  contentArr[0].innerHTML;
 }
 
-function nextSlide (){
-  alert('muie psd');
+console.log(initSlider);
+
+function prevSlide(){
+  const setDefault = contentArr[0].innerHTML;
+  
+  foreach(content) in contentArr
+    content.classList.add('current');
+}
+
+function nextSlide() {
+  contentArr.length.push(current);
 }
