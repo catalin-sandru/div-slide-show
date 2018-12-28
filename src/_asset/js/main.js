@@ -1,28 +1,26 @@
 let current = document.querySelectorAll('.current');
 const content = document.querySelectorAll('.container');
 const contentArr = Array.from(content);
-console.log(contentArr);
+console.log(contentArr[1]);
 
-console.log(current);
-let prev = document.querySelector('.prev');
-prev.addEventListener('mousedown', prevSlide);
-let next = document.querySelector('.next');
-next.addEventListener('click', nextSlide);
-current = contentArr.length[0];
+// let prev = document.querySelector('.prev');
+// prev.addEventListener('mousedown', prevSlide);
+// let next = document.querySelector('.next');
+// next.addEventListener('click', nextSlide);
+// initSlider();
 
-function initSlider() {
-  contentArr[0].innerHTML;
-}
+// function initSlider() {
+//   current == contentArr.length.innerHTML;
+//   console.log(current);
+// }
 
-console.log(initSlider);
-
-function prevSlide(){
-  const setDefault = contentArr[0].innerHTML;
+// function prevSlide(){
+//   const setDefault = contentArr[0].innerHTML;
   
-  foreach(content) in contentArr
-    content.classList.add('current');
-}
+//   foreach(content) in contentArr
+//     content.classList.add('current');
+// }
 
-function nextSlide() {
-  contentArr.length.push(current);
-}
+// function nextSlide() {
+//   contentArr.length.push(current);
+// }
