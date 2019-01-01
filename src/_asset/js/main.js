@@ -7,7 +7,7 @@ let prev = document.querySelector('.prev');
 prev.addEventListener('mousedown', prevSlide);
 let next = document.querySelector('.next');
 next.addEventListener('click', nextSlide);
-initSlider();
+initSlider()
 
 // function initSlider() {
 //   current == contentArr.length.innerHTML;
