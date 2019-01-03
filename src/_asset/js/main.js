@@ -27,3 +27,5 @@ function prevSlide(){
     // contentArr.length.push(current)
     alert('muie psd');
   }
+
+  // testing git sync
