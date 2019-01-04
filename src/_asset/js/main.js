@@ -1,31 +1,32 @@
-let current = [];
 const content = document.querySelectorAll('.container');
 const contentArr = Array.from(content);
-current = contentArr[0].innerHTML
-console.log(contentArr[1]);
-
-let prev = document.querySelector('.prev');
-prev.addEventListener('mousedown', prevSlide);
-let next = document.querySelector('.next');
-next.addEventListener('click', nextSlide);
-initSlider();
 
 function initSlider() {
-  current = document.querySelector('.current');
-  console.log(current);
-}
-
-function prevSlide(){
-  // const setDefault = contentArr[0].innerHTML;
-  alert('muie psd');
+  let current = contentArr;
+  let print = "";
+  for(var i = 0; i < current.length; i++){
+    print = current[0].innerHTML;
   }
-  //   foreach(content) in contentArr
-  //     content.classList.add('current');
-  // }
+  return print;
+};
+
+document.getElementById('current').innerHTML = initSlider();
   
-  function nextSlide() {
-    // contentArr.length.push(current)
-    alert('muie psd');
-  }
+  // function prevSlide(){
+  //   // const setDefault = cont entArr[0].innerHTML;
+  //   alert('muie la ficat');
+  // }
+  // //   foreach(content) in contentArr
+  // //     content.classList.add('current');
+  // // }
 
-  // testing git sync
+  // next.addEventListener('click', nextSlide);
+  // let prev = document.querySelector('.prev');
+  // prev.addEventListener('mousedown', prevSlide);
+  // let next = document.querySelector('.next');
+  
+  // function nextSlide() {
+  //   // contentArr.length.push(current)
+  //   alert('muie psd');
+  // }
+
