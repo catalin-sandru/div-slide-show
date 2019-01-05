@@ -13,16 +13,15 @@ let prev = document.querySelector('.prev');
 prev.addEventListener('mousedown', prevSlide);
 
 function prevSlide(){
-  p1 = contentArr[++length].innerHTML;
-  document.getElementById('current').innerHTML = p1
+  p1 = contentArr[--length].innerHTML;
+  document.getElementById('current').innerHTML = p1;
   return p1;
 }
 
 function nextSlide() {
-  
-    n1 = contentArr[--length].innerHTML;
-    document.getElementById('current').innerHTML = n1
-    return n1;
+  n1 = contentArr[++length].innerHTML;
+  document.getElementById('current').innerHTML = n1;
+  return n1;
   }
 
 document.getElementById('current').innerHTML = current();
