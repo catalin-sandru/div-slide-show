@@ -1,13 +1,10 @@
 const content = document.querySelectorAll('.container');
 const contentArr = Array.from(content);
+
 let current = function initSlider() {
-  let print = [];
     print = contentArr[0].innerHTML;
-  console.log(print)
   return print;
 };
-
-// console.log()
 
 let next = document.querySelector('.next');
 next.addEventListener('click', nextSlide);
@@ -16,12 +13,16 @@ let prev = document.querySelector('.prev');
 prev.addEventListener('mousedown', prevSlide);
 
 function prevSlide(){
-  
-  console.log(current);
+  p1 = contentArr[++length].innerHTML;
+  document.getElementById('current').innerHTML = p1
+  return p1;
 }
 
 function nextSlide() {
   
-}
+    n1 = contentArr[--length].innerHTML;
+    document.getElementById('current').innerHTML = n1
+    return n1;
+  }
 
 document.getElementById('current').innerHTML = current();
