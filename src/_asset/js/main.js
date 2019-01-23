@@ -1,5 +1,6 @@
 const content = document.querySelectorAll('.container');
 const contentArr = Array.from(content);
+// console.log(contentArr.length)
 
 let current = function initSlider() {
     print = contentArr[0].innerHTML;
@@ -22,6 +23,5 @@ function nextSlide() {
   n1 = contentArr[++length].innerHTML;
   document.getElementById('current').innerHTML = n1;
   return n1;
-  }
-
+}
 document.getElementById('current').innerHTML = current();
